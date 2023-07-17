@@ -30,14 +30,14 @@ const playMusic = ()=>{
     isPlaying = true;
     music.play();
     play.classList.replace('fa-play','fa-pause');
-    img.classList.add("anime");
+    img.style.animationPlayState="running";
 };
 
 const pauseMusic = ()=>{
     isPlaying = false;
     music.pause();
     play.classList.replace('fa-pause','fa-play');
-    img.classList.remove("anime");
+    img.style.animationPlayState="paused";
 };
 
 play.addEventListener('click',()=>{

@@ -98,6 +98,7 @@ img{
 
 .anime{
     animation: rotatePlayer 3s linear infinite;
+    animation-play-state: paused;
 }
 
 @keyframes rotatePlayer{
